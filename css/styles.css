@@ -1,0 +1,306 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:after ,*:before{
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f2f2f2;
+}
+/* Estilos Generales */
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.contenedor{
+    max-width: 1100px;
+    margin:  0 auto;
+}
+
+img{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Header */
+.hero{
+    background-image: url(../img/hero.jpg);
+    height: 100vh;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.barra{
+    position: absolute;
+    width: 100%;
+    min-height: 80px;
+    top:0px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(212, 217, 221);
+}
+
+.barra .contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px){
+    .barra .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo, .navegacion{
+    text-align: center;
+    margin-top: 0px;
+}
+
+.logo-img{
+    max-width: 6rem;
+}
+
+.navegacion ul{
+    padding: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .navegacion ul{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.navegacion ul li{
+    padding: 5px  10px;
+}
+
+.navegacion ul li a{
+    font-family:fantasy;
+    font-size: 18px;
+    color: #000;
+}
+
+.navegacion ul li a:hover{
+    color: #e50914;
+    border-top: 2px solid #e50914;
+}
+
+/*Contenido*/
+h2{
+    flex: 0 1 100%;
+    text-align: center;
+    font-family: "Libre Baskerville" , serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #141414;
+}
+
+h3{
+    font-family: "Libre Baskerville" , serif;
+    margin: 0px;
+    font-weight: 700;
+}
+
+
+
+@media screen and (min-width:480px){
+    .contenido-principal{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .entrada{
+        flex: 0 1 calc(50% - 1rem);
+    }
+}
+
+@media screen and (min-width:768px){
+    .entrada{
+        flex: 0 1 calc(33% - 1rem);
+    }
+}
+
+.entrada{
+    margin-bottom: 1rem;
+}
+.contenido{
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 1px solid rgb(199, 51, 51);
+    margin-top: -5px;
+}
+
+.contenido h3{
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.4rem;
+}
+
+.contenido span{
+    color: #e50914;
+}
+
+.boton{
+    display: inline-block;
+    background-color: #e50914;
+    color: white;
+    padding: .8rem 3rem;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+/* Categorias con iconos */
+.categorias ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding:0px
+}
+
+.categorias ul li{
+    border: 1px solid #000;
+    flex: 1 0 calc(50%);
+    padding:20px;
+    height: 150px;
+}
+
+.categorias ul li:nth-child(1){
+    background-color: #008fd1;
+}
+
+.categorias ul li:nth-child(2){
+    background-color: #db008d;
+}
+
+.categorias ul li:nth-child(3){
+    background-color: #9800d1;
+}
+
+.categorias ul li:nth-child(4){
+    background-color: #eca300;
+}
+
+
+
+.categorias ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.categorias ul li a i{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (min-width:768px) {
+    .categorias ul li{
+        flex: 1 ;
+    }
+}
+
+
+/*footer*/
+.footer{
+    background-color: #e50914;
+    padding-top: 1rem;
+    color:#fff;
+}
+
+.footer h2{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.entradas{
+    margin-left: 40px ;
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .footer .contenedor{
+        display: flex;
+    }
+
+    .footer .caja{
+        flex: 1;
+    }
+}
+
+
+.copyright{
+    background-color: #000;
+    margin:2rem 0 0 0;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+#iconos ul li span{
+    display: none;
+}
+
+#iconos ul{
+    display: flex;
+    justify-content: center;
+}
+
+#iconos ul li a:before{
+    font-family: "Font Awesome 5 Brands";
+    font-size: 2rem;
+}
+
+#iconos ul li a[href*="facebook.com"]::before {
+    content: "\f082";
+}
+
+#iconos ul li a[href*="twitter.com"]::before {
+    content: "\f099";
+}
+
+
+#iconos ul li a[href*="youtube.com"]::before {
+    content: "\f167";
+}
+
+#iconos ul li a[href*="instagram.com"]::before {
+    content: "\f16d";
+}
+
+
+#iconos ul li a[href*="pinterest"]::before {
+    content: "\f0d2";
+}
+
+#iconos ul li a{
+    color: #fff;
+}
+
+#iconos ul li a:hover{
+    color: #000 ;
+}
+
