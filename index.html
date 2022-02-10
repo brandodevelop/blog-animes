@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/5a4109b0b6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header hero">
@@ -22,10 +22,10 @@
                 </div>
                 <nav class="navegacion">
                     <ul>
-                        <li><a href="#">Inicio</a></li>
+                        <li><a href="index.html">Inicio</a></li>
                         <li><a href="#">Nosotros</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -122,6 +122,39 @@
                     </li>
                 </ul>
             </div>
+            <form action="#">
+                <h2>Contactame</h2>
+                <div class="caja">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" class="input" type="text"/>
+                </div>
+                <div class="caja">
+                    <label for="email">Correo</label>
+                    <input id="email" class="input" type="email"/>
+                </div>
+                <div class="caja ">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" class="input"></textarea>
+                </div>
+                <div class="sk-chase" id="spinner">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                </div>
+                <div class="buttons insert">
+                    <a href="validando" id="enviar" class="enviar" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M503.7 226.2l-176 151.1c-15.38 13.3-39.69 2.545-39.69-18.16V272.1C132.9 274.3 66.06 312.8 111.4 457.8c5.031 16.09-14.41 28.56-28.06 18.62C39.59 444.6 0 383.8 0 322.3c0-152.2 127.4-184.4 288-186.3V56.02c0-20.67 24.28-31.46 39.69-18.16l176 151.1C514.8 199.4 514.8 216.6 503.7 226.2z"/></svg>
+                        Enviar
+                    </a>
+                    <a href="validando" id="borrar" class="eliminar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg"><path d="M135.2 17.69C140.6 6.848 151.7 0 163.8 0H284.2C296.3 0 307.4 6.848 312.8 17.69L320 32H416C433.7 32 448 46.33 448 64C448 81.67 433.7 96 416 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H128L135.2 17.69zM31.1 128H416V448C416 483.3 387.3 512 352 512H95.1C60.65 512 31.1 483.3 31.1 448V128zM111.1 208V432C111.1 440.8 119.2 448 127.1 448C136.8 448 143.1 440.8 143.1 432V208C143.1 199.2 136.8 192 127.1 192C119.2 192 111.1 199.2 111.1 208zM207.1 208V432C207.1 440.8 215.2 448 223.1 448C232.8 448 240 440.8 240 432V208C240 199.2 232.8 192 223.1 192C215.2 192 207.1 199.2 207.1 208zM304 208V432C304 440.8 311.2 448 320 448C328.8 448 336 440.8 336 432V208C336 199.2 328.8 192 320 192C311.2 192 304 199.2 304 208z"/></svg>
+                        Borrar
+                    </a>
+                </div>
+            </form>
     </div><!--.contenido-->
     <footer class="footer">
         <div class="contenedor">
@@ -162,8 +195,9 @@
                 </nav>
             </div>
         </div>
-        <div id="sfc5832tp4ny68pdn7p8h3rfmsph3h4ymuy"></div><script type="text/javascript" src="https://counter2.stat.ovh/private/counter.js?c=5832tp4ny68pdn7p8h3rfmsph3h4ymuy&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="contadores web"><img src="https://counter2.stat.ovh/private/contadorvisitasgratis.php?c=5832tp4ny68pdn7p8h3rfmsph3h4ymuy" border="0" title="contadores web" alt="contadores web"></a></noscript>
+        <script src="https://kit.fontawesome.com/2d9bfcf141.js" crossorigin="anonymous"></script>
         <p class="copyright">Animes Watch Flexbox 2022 &copy;</p>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>
