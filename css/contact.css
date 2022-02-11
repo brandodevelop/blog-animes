@@ -177,13 +177,13 @@ svg, path{
     font-family:sans-serif;
     font-size: 18px;
     display: inline-block;
-    width: 500px;
+    width: 700px;
     margin:  15px auto;
-    border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
-    background-color: red;
-    color:#fff;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
     text-align: center;
 }
 
@@ -191,15 +191,16 @@ svg, path{
     font-family:sans-serif;
     font-size: 18px;
     display: inline-block;
-    width: 500px;
+    width: 700px;
     margin:  15px auto;
-    border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
-    background-color: rgb(43, 150, 43);
-    color:#fff;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
     text-align: center;
 }
+
 
 
 /* Spinner */

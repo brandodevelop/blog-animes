@@ -1,5 +1,6 @@
 html{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *, *:after ,*:before{
@@ -49,7 +50,7 @@ img{
 }
 
 .barra{
-    position: absolute;
+    position: fixed !important;
     width: 100%;
     min-height: 80px;
     top:0px;
@@ -103,6 +104,7 @@ img{
         flex-direction: row;
     }
 }
+
 
 .navegacion ul li{
     padding: 5px  10px;
