@@ -21,6 +21,16 @@ function eventListener(){
     asunto.addEventListener("blur", validarFormulario);
     btnenviar.addEventListener("click", enviarEmail);
     btnborrar.addEventListener("click", resetearFormualrio);
+
+    // Fechas en JS
+    document.addEventListener("DOMContentLoaded", ()=>{
+        const copyright = document.querySelector("#copyright");
+
+        moment.locale("es");
+        const fecha = moment().format('L');
+
+        copyright.textContent = ` Animes Watch Flexbox  ${fecha}`;
+    })
 }
 
 /* Funciones */
@@ -81,3 +91,5 @@ function mensajeValidacion(mensaje){
     }
 
 }
+
+
